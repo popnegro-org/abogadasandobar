@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Derecho Penal Ambiental y Urbanístico">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161412"/>
+      <stop offset="100%" stop-color="#243028"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g transform="translate(360,180)">
+    <path d="M220 40 C160 120 120 160 80 280 H360 C320 160 280 120 220 40 Z" fill="#7F203D" opacity="0.35"/>
+    <path d="M220 80 C180 140 150 175 120 260 H320 C290 175 260 140 220 80 Z" fill="#D9A9B8" opacity="0.25"/>
+    <rect x="200" y="260" width="40" height="80" fill="#FFF8F2" opacity="0.35"/>
+    <path d="M60 340 H380" stroke="#D9A9B8" stroke-width="3" opacity="0.5"/>
+  </g>
+  <circle cx="180" cy="200" r="50" fill="#7F203D" opacity="0.12"/>
+  <circle cx="980" cy="420" r="80" fill="#D9A9B8" opacity="0.08"/>
+  <text x="80" y="620" fill="#D9A9B8" font-family="Georgia, serif" font-size="22" letter-spacing="4" opacity="0.85">PENAL AMBIENTAL</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Derecho Penal Societario y Tributario">
+  <defs>
+    <linearGradient id="bg" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181614"/>
+      <stop offset="100%" stop-color="#302428"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g transform="translate(300,180)" fill="#FFF8F2">
+    <rect x="80" y="120" width="420" height="220" rx="10" fill="#7F203D" opacity="0.2" stroke="#D9A9B8" stroke-width="2"/>
+    <circle cx="180" cy="230" r="36" fill="#D9A9B8" opacity="0.85"/>
+    <circle cx="290" cy="230" r="36" fill="#FFF8F2" opacity="0.55"/>
+    <circle cx="400" cy="230" r="36" fill="#7F203D" opacity="0.9"/>
+    <path d="M216 230 H254 M326 230 H364" stroke="#D9A9B8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="150" y="80" width="280" height="28" rx="6" fill="#7F203D"/>
+  </g>
+  <text x="80" y="620" fill="#D9A9B8" font-family="Georgia, serif" font-size="22" letter-spacing="4" opacity="0.85">PENAL SOCIETARIO</text>
+</svg>

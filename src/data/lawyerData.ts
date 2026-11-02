@@ -72,9 +72,7 @@ export const STATS = [
 
 /**
  * ============================================================
- * SERVICES — catálogo de referencia
- * (la UI de Servicios usa SERVICE_COPY local; este array queda
- *  disponible para futuros usos y mantiene image con fallback real)
+ * SERVICES — catálogo de referencia con assets reales por servicio
  * ============================================================
  */
 
@@ -94,7 +92,7 @@ export const SERVICES: ServiceItem[] = [
       'Defensa ante la Fiscalía Especial contra la Corrupción',
     ],
     iconName: 'ShieldAlert',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.serviceDelitosEconomicos,
     courtTypes: [
       'Polo Judicial Penal Mendoza',
       'Cámara Federal de Mendoza',
@@ -116,7 +114,7 @@ export const SERVICES: ServiceItem[] = [
       'Coordinación de informes periciales forenses',
     ],
     iconName: 'Scale',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.serviceLitigacionCompleja,
     courtTypes: [
       'Suprema Corte de Mendoza',
       'Tribunales Penales Colegiados',
@@ -138,7 +136,7 @@ export const SERVICES: ServiceItem[] = [
       'Defensa penal corporativa de la persona jurídica',
     ],
     iconName: 'FileCheck',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.serviceCompliancePenal,
     isFeatured: true,
   },
   {
@@ -156,7 +154,7 @@ export const SERVICES: ServiceItem[] = [
       'Imposición de acuerdos abusivos o lesivos',
     ],
     iconName: 'Briefcase',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.serviceDelitosSocietarios,
   },
   {
     id: 'ciberdelincuencia',
@@ -173,7 +171,7 @@ export const SERVICES: ServiceItem[] = [
       'Defensa y acusación particular con pericial forense',
     ],
     iconName: 'Lock',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.serviceCiberdelincuencia,
   },
   {
     id: 'urgencias-penales',
@@ -190,7 +188,7 @@ export const SERVICES: ServiceItem[] = [
       'Línea directa de urgencia penal 24 horas',
     ],
     iconName: 'AlertCircle',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.serviceUrgenciasPenales,
   },
   {
     id: 'investigaciones-internas',
@@ -207,7 +205,7 @@ export const SERVICES: ServiceItem[] = [
       'Informes técnicos de descargo para la fiscalía',
     ],
     iconName: 'Search',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.serviceInvestigacionesInternas,
   },
   {
     id: 'penal-medioambiental',
@@ -224,7 +222,7 @@ export const SERVICES: ServiceItem[] = [
       'Coordinación de peritajes ambientales y topográficos',
     ],
     iconName: 'Building2',
-    image: ASSETS.serviceFallback,
+    image: ASSETS.servicePenalMedioambiental,
   },
 ];
 

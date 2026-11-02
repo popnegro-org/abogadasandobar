@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Investigaciones Internas y Forensic">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181614"/>
+      <stop offset="100%" stop-color="#252022"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g transform="translate(380,150)">
+    <circle cx="160" cy="150" r="110" fill="none" stroke="#D9A9B8" stroke-width="10"/>
+    <circle cx="160" cy="150" r="70" fill="#7F203D" opacity="0.25"/>
+    <line x1="240" y1="230" x2="340" y2="330" stroke="#FFF8F2" stroke-width="14" stroke-linecap="round"/>
+    <rect x="40" y="300" width="200" height="16" rx="4" fill="#D9A9B8" opacity="0.4"/>
+    <rect x="40" y="330" width="160" height="12" rx="3" fill="#FFF8F2" opacity="0.2"/>
+  </g>
+  <text x="80" y="620" fill="#D9A9B8" font-family="Georgia, serif" font-size="22" letter-spacing="4" opacity="0.85">INVESTIGACIONES INTERNAS</text>
+</svg>

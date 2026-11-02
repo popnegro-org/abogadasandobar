@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Ciberdelitos y Fraude Digital">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141312"/>
+      <stop offset="100%" stop-color="#241C22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g opacity="0.2" stroke="#D9A9B8" fill="none" stroke-width="1">
+    <path d="M100 120 H300 M200 80 V200"/>
+    <path d="M900 480 H1100 M1000 430 V560"/>
+    <circle cx="250" cy="400" r="40"/>
+    <circle cx="950" cy="180" r="50"/>
+  </g>
+  <g transform="translate(430,160)">
+    <rect x="40" y="40" width="280" height="200" rx="16" fill="#7F203D" opacity="0.25" stroke="#D9A9B8" stroke-width="2"/>
+    <rect x="70" y="80" width="220" height="14" rx="3" fill="#FFF8F2" opacity="0.35"/>
+    <rect x="70" y="110" width="180" height="10" rx="2" fill="#D9A9B8" opacity="0.5"/>
+    <rect x="70" y="135" width="200" height="10" rx="2" fill="#FFF8F2" opacity="0.25"/>
+    <rect x="70" y="160" width="150" height="10" rx="2" fill="#FFF8F2" opacity="0.2"/>
+    <circle cx="180" cy="290" r="34" fill="none" stroke="#7F203D" stroke-width="4"/>
+    <path d="M180 270 V290 L195 305" fill="none" stroke="#D9A9B8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="80" y="620" fill="#D9A9B8" font-family="Georgia, serif" font-size="22" letter-spacing="4" opacity="0.85">CIBERDELITOS</text>
+</svg>

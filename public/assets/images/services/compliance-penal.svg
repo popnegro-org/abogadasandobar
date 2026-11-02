@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Compliance Penal y Programas de Integridad">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1C1816"/>
+      <stop offset="100%" stop-color="#2A2226"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g transform="translate(420,140)">
+    <path d="M180 20 L320 80 V200 C320 280 260 340 180 370 C100 340 40 280 40 200 V80 Z" fill="#7F203D" opacity="0.25" stroke="#D9A9B8" stroke-width="3"/>
+    <path d="M120 200 L165 245 L250 150" fill="none" stroke="#FFF8F2" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g opacity="0.35" stroke="#D9A9B8" fill="none" stroke-width="1.5">
+    <rect x="120" y="180" width="90" height="70" rx="6"/>
+    <rect x="980" y="220" width="90" height="70" rx="6"/>
+    <rect x="140" y="420" width="90" height="70" rx="6"/>
+    <rect x="960" y="430" width="90" height="70" rx="6"/>
+  </g>
+  <text x="80" y="620" fill="#D9A9B8" font-family="Georgia, serif" font-size="22" letter-spacing="4" opacity="0.85">COMPLIANCE PENAL</text>
+</svg>

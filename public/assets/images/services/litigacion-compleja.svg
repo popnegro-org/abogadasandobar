@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Litigación Penal Compleja y Juicio Oral">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#181614"/>
+      <stop offset="100%" stop-color="#2F2428"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g transform="translate(600,340)">
+    <line x1="0" y1="-180" x2="0" y2="160" stroke="#7F203D" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-160" y1="-80" x2="160" y2="-80" stroke="#D9A9B8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-160 -80 L-200 20 L-120 20 Z" fill="#FFF8F2" opacity="0.85"/>
+    <path d="M160 -80 L120 20 L200 20 Z" fill="#FFF8F2" opacity="0.85"/>
+    <circle cx="0" cy="-180" r="18" fill="#7F203D"/>
+    <rect x="-28" y="150" width="56" height="18" rx="3" fill="#D9A9B8"/>
+  </g>
+  <circle cx="200" cy="160" r="90" fill="#7F203D" opacity="0.12"/>
+  <circle cx="1000" cy="500" r="140" fill="#D9A9B8" opacity="0.08"/>
+  <text x="80" y="620" fill="#D9A9B8" font-family="Georgia, serif" font-size="22" letter-spacing="4" opacity="0.85">LITIGACIÓN COMPLEJA</text>
+</svg>
