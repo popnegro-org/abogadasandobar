@@ -30,8 +30,14 @@ const OFFICE_GEO = {
   longitude: -68.842749,
 } as const;
 
+/** Perfil de Google Business / Maps (entidad KG /g/11nvqh1877 — Abogada Penalista Emilia Sandobar). */
 const OFFICE_MAP_URL =
   'https://www.google.com/maps/place/Abogada+Emilia+Sandobar/@-32.890209,-68.842749,15z';
+
+const SAME_AS = [
+  OFFICE_MAP_URL,
+  'https://share.google/LPbykRUEoyUd1jXTC',
+] as const;
 
 const OFFER_CATALOG = {
   '@type': 'OfferCatalog',
@@ -145,6 +151,7 @@ export function updateStructuredData(page: StructuredPage) {
         image: `${SITE_URL}/assets/images/portraits/emilia-sandobar.webp`,
         worksFor: { '@id': SERVICE_ID },
         knowsAbout: SERVICE_TYPES,
+        sameAs: [...SAME_AS],
         alumniOf: {
           '@type': 'CollegeOrUniversity',
           name: 'Universidad Nacional de Cuyo',
@@ -198,6 +205,7 @@ export function updateStructuredData(page: StructuredPage) {
         },
         geo: OFFICE_GEO,
         hasMap: OFFICE_MAP_URL,
+        sameAs: [...SAME_AS],
         openingHours: 'Mo-Fr 08:30-19:30',
         email: 'info@abogadasandobar.com.ar',
         telephone: '+54 9 261 346-4483',
