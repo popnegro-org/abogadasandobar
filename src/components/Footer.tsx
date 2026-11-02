@@ -38,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultationModal }) => {
         <div className="grid grid-cols-1 gap-10 border-b border-[#FFF8F2]/10 pb-14 md:grid-cols-2 lg:grid-cols-12 lg:gap-12">
           <div className="space-y-5 lg:col-span-4">
             <span className="block pb-1 text-xs font-bold uppercase tracking-widest text-[#DDD2C5]">Jurisdicción & Cobertura</span>
-            <p className="text-sm font-light leading-relaxed text-[#F4EFE8]/75" itemProp="description">Estudio jurídico especializado en Derecho Penal, Litigación de Alta Complejidad y Programas de Integridad Corporativa en la Provincia de Mendoza y Fueros Federales de Cuyo.</p>
+            <p className="text-sm font-light leading-relaxed text-[#F4EFE8]/75" itemProp="description">Estudio jurídico penal en Mendoza especializado en Derecho Penal, litigación de alta complejidad y programas de integridad corporativa. Atención de abogada penalista y abogado penalista Mendoza, con estudio jurídico 24 hs Mendoza para urgencias en la Provincia y Fueros Federales de Cuyo.</p>
             <div className="space-y-2.5 text-sm text-[#DDD2C5]">
               <div className="flex items-center gap-2.5"><Scale className="h-4 w-4 shrink-0 text-[#7F203D]" aria-hidden="true" /><span className="font-semibold text-white/90">{CONTACT_INFO.matriculaProvincial}</span></div>
               <div className="flex items-start gap-2.5 text-sm text-white/70"><Shield className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400/80" aria-hidden="true" /><span>{CONTACT_INFO.matriculaFederal}</span></div>
@@ -96,7 +96,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultationModal }) => {
               {mapLoaded ? (
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13401.204022125608!2d-68.842749!3d-32.890209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09ac90023991%3A0x42a4e4a060a92ef!2sAbogada%20Emilia%20Sandobar!5e0!3m2!1ses-419!2sar!4v1788299319445!5m2!1ses-419!2sar"
-                  title="Ubicación del estudio jurídico Emilia Sandobar"
+                  title="Ubicación del estudio jurídico penal Emilia Sandobar en Mendoza"
                   className="w-full aspect-video rounded-lg shadow-sm"
                   style={{ border: 0 }}
                   allowFullScreen={true}
@@ -109,7 +109,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultationModal }) => {
 
         </div>
         <div className="flex flex-col items-center justify-between gap-6 pt-10 text-xs text-[#F4EFE8]/70 md:flex-row">
-          <div className="order-1 text-center text-xs md:order-2 md:text-left"><span>© {new Date().getFullYear()} Todos los derechos reservados.</span></div>
+          <div className="order-1 text-center text-xs md:order-2 md:text-left"><span>© {new Date().getFullYear()} Estudio jurídico penal Mendoza. Todos los derechos reservados.</span></div>
           <div className="order-1 text-center text-xs md:order-2 md:text-right"><span><a href="https://wa.me/5492616706710" target="_blank" rel="noopener noreferrer" className={`transition-colors hover:text-white ${focusRing}`}>Powered by SmartWeb</a></span></div>
         </div>
       </div>
