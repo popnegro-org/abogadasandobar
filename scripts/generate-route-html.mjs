@@ -117,10 +117,10 @@ const AUTHORITY_SOURCES = [
 ];
 
 const escapeHtml = (value) => value
-  .replaceAll('&', '&amp;')
-  .replaceAll('"', '&quot;')
-  .replaceAll('<', '&lt;')
-  .replaceAll('>', '&gt;');
+  .replaceAll('&', '&')
+  .replaceAll('"', '"')
+  .replaceAll('<', '<')
+  .replaceAll('>', '>');
 
 const canonicalPath = (path) => (path === '/inicio' ? '/' : path);
 
@@ -186,22 +186,78 @@ function buildJsonLd(path, metadata) {
         image: DEFAULT_IMAGE,
         logo: `${SITE_URL}/assets/brand/logo-brandmark.svg`,
         description:
-          'Estudio jurídico penal en Mendoza dirigido por la Dra. Emilia Sandobar. Abogada penalista y abogado penalista Mendoza con defensa penal, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias.',
-        areaServed: {
-          '@type': 'City',
-          name: 'Mendoza',
-          containedInPlace: { '@type': 'Country', name: 'Argentina' },
-        },
+          'Estudio jurídico penal en Mendoza dirigido por la Dra. Emilia Sandobar. Abogada penalista y abogado penalista Mendoza con defensa penal, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Atención de guardia penal 24 hs.',
+        areaServed: [
+          {
+            '@type': 'City',
+            name: 'Mendoza',
+            containedInPlace: {
+              '@type': 'AdministrativeArea',
+              name: 'Provincia de Mendoza',
+              containedInPlace: { '@type': 'Country', name: 'Argentina' },
+            },
+          },
+          {
+            '@type': 'AdministrativeArea',
+            name: 'Fueros Federales de Cuyo',
+          },
+        ],
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'Peatonal Sarmiento 250, 2° B',
           addressLocality: 'Mendoza',
+          addressRegion: 'Mendoza',
           addressCountry: 'AR',
         },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: -32.890209,
+          longitude: -68.842749,
+        },
+        hasMap: 'https://www.google.com/maps/place/Abogada+Emilia+Sandobar/@-32.890209,-68.842749,15z',
+        openingHours: 'Mo-Fr 08:30-19:30',
         email: 'info@abogadasandobar.com.ar',
         telephone: '+54 9 261 346-4483',
+        contactPoint: [
+          {
+            '@type': 'ContactPoint',
+            contactType: 'customer service',
+            telephone: '+54 9 261 346-4483',
+            email: 'info@abogadasandobar.com.ar',
+            availableLanguage: ['Spanish'],
+            areaServed: 'AR',
+            hoursAvailable: {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+              opens: '08:30',
+              closes: '19:30',
+            },
+          },
+          {
+            '@type': 'ContactPoint',
+            contactType: 'emergency',
+            telephone: '+54 9 261 346-4483',
+            availableLanguage: ['Spanish'],
+            areaServed: 'AR',
+            description: 'Guardia penal / estudio jurídico 24 hs Mendoza',
+          },
+        ],
         provider: { '@id': PERSON_ID },
+        employee: { '@id': PERSON_ID },
         serviceType: SERVICE_TYPES,
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Servicios del estudio jurídico penal',
+          itemListElement: [
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Defensa penal y litigación' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Estudio jurídico 24 hs Mendoza' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Representación de víctimas y querellas' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Asesoramiento corporativo y compliance' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reclamos indemnizatorios' } },
+          ],
+        },
+        keywords:
+          'abogada penalista Mendoza, abogado penalista Mendoza, estudio jurídico penal Mendoza, estudio jurídico 24 hs Mendoza, defensa penal, urgencias penales 24 hs',
       },
     ],
   };
@@ -212,8 +268,6 @@ function buildSeoStaticMain(metadata) {
   const h2 = metadata.h2 ? `<h2>${escapeHtml(metadata.h2)}</h2>` : '';
   const intro = escapeHtml(metadata.intro || metadata.description);
 
-  // Keep in DOM for crawlers; clip out of viewport so UX never sees a pre-hydrate flash.
-  // Visible H1 after hydrate comes from React with the same wording.
   const mainStyle =
     'position:absolute;width:1px;height:1px;padding:0;margin:-1px;' +
     'overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0';
