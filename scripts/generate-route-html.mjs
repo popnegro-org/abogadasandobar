@@ -7,6 +7,10 @@ const PERSON_ID = `${SITE_URL}/#person`;
 const SERVICE_ID = `${SITE_URL}/#legal-service`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 
+const OFFICE_MAP_URL =
+  'https://www.google.com/maps/place/Abogada+Emilia+Sandobar/@-32.890209,-68.842749,15z';
+const SAME_AS = [OFFICE_MAP_URL, 'https://share.google/LPbykRUEoyUd1jXTC'];
+
 /** Must stay aligned with src/utils/useRouteMetadata.ts (SEO on-page).
  *  h1/intro must match visible hero copy so crawlers and UI stay consistent.
  */
@@ -116,22 +120,24 @@ const AUTHORITY_SOURCES = [
   },
 ];
 
-const escapeHtml = (value) => value
-  .replaceAll('&', '&')
-  .replaceAll('"', '"')
-  .replaceAll('<', '<')
-  .replaceAll('>', '>');
+const escapeHtml = (value) =>
+  value
+    .replaceAll('&', '&')
+    .replaceAll('"', '"')
+    .replaceAll('<', '<')
+    .replaceAll('>', '>');
 
 const canonicalPath = (path) => (path === '/inicio' ? '/' : path);
 
 function buildJsonLd(path, metadata) {
   const canonicalUrl = `${SITE_URL}${canonicalPath(path)}`;
-  const breadcrumbItems = path === '/'
-    ? [{ '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` }]
-    : [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: metadata.title.split(' | ')[0], item: canonicalUrl },
-      ];
+  const breadcrumbItems =
+    path === '/'
+      ? [{ '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` }]
+      : [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: metadata.title.split(' | ')[0], item: canonicalUrl },
+        ];
 
   return {
     '@context': 'https://schema.org',
@@ -170,6 +176,7 @@ function buildJsonLd(path, metadata) {
         url: `${SITE_URL}/abogada-penalista-mendoza`,
         image: `${SITE_URL}/assets/images/portraits/emilia-sandobar.webp`,
         worksFor: { '@id': SERVICE_ID },
+        sameAs: SAME_AS,
         knowsAbout: SERVICE_TYPES,
         subjectOf: AUTHORITY_SOURCES,
       },
@@ -214,7 +221,8 @@ function buildJsonLd(path, metadata) {
           latitude: -32.890209,
           longitude: -68.842749,
         },
-        hasMap: 'https://www.google.com/maps/place/Abogada+Emilia+Sandobar/@-32.890209,-68.842749,15z',
+        hasMap: OFFICE_MAP_URL,
+        sameAs: SAME_AS,
         openingHours: 'Mo-Fr 08:30-19:30',
         email: 'info@abogadasandobar.com.ar',
         telephone: '+54 9 261 346-4483',
@@ -304,15 +312,33 @@ for (const [path, metadata] of Object.entries(ROUTES)) {
 
   let html = source
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(metadata.title)}</title>`)
-    .replace(/<meta name="description"\s+content="[^"]*"\s*\/>/, `<meta name="description" content="${escapeHtml(metadata.description)}" />`)
+    .replace(
+      /<meta name="description"\s+content="[^"]*"\s*\/>/,
+      `<meta name="description" content="${escapeHtml(metadata.description)}" />`,
+    )
     .replace(/<link rel="canonical" href="[^"]*"\s*\/>/, `<link rel="canonical" href="${canonicalUrl}" />`)
-    .replace(/<meta property="og:title" content="[^"]*"\s*\/>/, `<meta property="og:title" content="${escapeHtml(metadata.title)}" />`)
-    .replace(/<meta property="og:description"\s+content="[^"]*"\s*\/>/, `<meta property="og:description" content="${escapeHtml(metadata.description)}" />`)
+    .replace(
+      /<meta property="og:title" content="[^"]*"\s*\/>/,
+      `<meta property="og:title" content="${escapeHtml(metadata.title)}" />`,
+    )
+    .replace(
+      /<meta property="og:description"\s+content="[^"]*"\s*\/>/,
+      `<meta property="og:description" content="${escapeHtml(metadata.description)}" />`,
+    )
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonicalUrl}" />`)
     .replace(/<meta property="og:image" content="[^"]*"\s*\/>/, `<meta property="og:image" content="${image}" />`)
-    .replace(/<meta property="og:image:alt" content="[^"]*"\s*\/>/, `<meta property="og:image:alt" content="${escapeHtml(imageAlt)}" />`)
-    .replace(/<meta name="twitter:title" content="[^"]*"\s*\/>/, `<meta name="twitter:title" content="${escapeHtml(metadata.title)}" />`)
-    .replace(/<meta name="twitter:description"\s+content="[^"]*"\s*\/>/, `<meta name="twitter:description" content="${escapeHtml(metadata.description)}" />`)
+    .replace(
+      /<meta property="og:image:alt" content="[^"]*"\s*\/>/,
+      `<meta property="og:image:alt" content="${escapeHtml(imageAlt)}" />`,
+    )
+    .replace(
+      /<meta name="twitter:title" content="[^"]*"\s*\/>/,
+      `<meta name="twitter:title" content="${escapeHtml(metadata.title)}" />`,
+    )
+    .replace(
+      /<meta name="twitter:description"\s+content="[^"]*"\s*\/>/,
+      `<meta name="twitter:description" content="${escapeHtml(metadata.description)}" />`,
+    )
     .replace(/<meta name="twitter:image" content="[^"]*"\s*\/>/, `<meta name="twitter:image" content="${image}" />`)
     .replace(/<meta name="twitter:url" content="[^"]*"\s*\/>/, `<meta name="twitter:url" content="${canonicalUrl}" />`)
     .replace(jsonLdPattern, `<script type="application/ld+json">\n${jsonLd}\n  </script>`);
@@ -320,12 +346,19 @@ for (const [path, metadata] of Object.entries(ROUTES)) {
   if (!html.includes('property="og:image:width"')) {
     html = html.replace(
       /<meta property="og:image:alt" content="[^"]*"\s*\/>/,
-      (match) => `${match}\n  <meta property="og:image:width" content="${OG_IMAGE_WIDTH}" />\n  <meta property="og:image:height" content="${OG_IMAGE_HEIGHT}" />`,
+      (match) =>
+        `${match}\n  <meta property="og:image:width" content="${OG_IMAGE_WIDTH}" />\n  <meta property="og:image:height" content="${OG_IMAGE_HEIGHT}" />`,
     );
   } else {
     html = html
-      .replace(/<meta property="og:image:width" content="[^"]*"\s*\/>/, `<meta property="og:image:width" content="${OG_IMAGE_WIDTH}" />`)
-      .replace(/<meta property="og:image:height" content="[^"]*"\s*\/>/, `<meta property="og:image:height" content="${OG_IMAGE_HEIGHT}" />`);
+      .replace(
+        /<meta property="og:image:width" content="[^"]*"\s*\/>/,
+        `<meta property="og:image:width" content="${OG_IMAGE_WIDTH}" />`,
+      )
+      .replace(
+        /<meta property="og:image:height" content="[^"]*"\s*\/>/,
+        `<meta property="og:image:height" content="${OG_IMAGE_HEIGHT}" />`,
+      );
   }
 
   if (!html.includes('name="twitter:image:alt"')) {
