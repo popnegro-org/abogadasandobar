@@ -60,12 +60,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultationModal }) => {
           <div className="space-y-4 lg:col-span-3">
             <span className="block pb-1 text-xs font-bold uppercase tracking-widest text-[#DDD2C5]">Oficina</span>
 
-            <div className="flex items-start gap-3" itemProp="address" itemScope itemType="https://schema.org">
+            <div className="flex items-start gap-3" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#7F203D]" aria-hidden="true" />
               <div>
-                <span className="block text-sm font-medium text-white" itemProp="streetAddress">Peatonal Sarmiento 250, 2° B</span>
+                <span className="block text-sm font-medium text-white" itemProp="streetAddress">{CONTACT_INFO.streetAddress}</span>
                 <span className="block text-sm leading-relaxed text-white/70">
-                  <span itemProp="addressLocality">Mendoza</span>, <span itemProp="addressRegion">Mendoza</span>, <span itemProp="addressCountry">Argentina</span>
+                  <span itemProp="addressLocality">{CONTACT_INFO.locality}</span>, <span itemProp="addressRegion">{CONTACT_INFO.region}</span>, <span itemProp="addressCountry">{CONTACT_INFO.country}</span>
                 </span>
               </div>
             </div>
@@ -87,8 +87,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultationModal }) => {
             <div className="flex items-start gap-3 pb-3 text-sm text-[#F4EFE8]/70">
               <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[#7F203D]" aria-hidden="true" />
               <div>
-                <span className="block">Lunes a Viernes: 08:30 - 19:30 hs</span>
-                <span className="mt-0.5 block font-medium text-[#D9A9B8]">Guardia Penal 24 hs</span>
+                <span className="block">{CONTACT_INFO.schedule}</span>
+                <span className="mt-0.5 block font-medium text-[#D9A9B8]">{CONTACT_INFO.urgencyNote}</span>
               </div>
             </div>
 
