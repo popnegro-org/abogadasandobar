@@ -336,14 +336,14 @@ export const FAQS: FAQItem[] = [
     category: 'urgencias',
     question: '¿Qué ocurre si necesito asistencia inmediata?',
     answer:
-      'Una urgencia es una situación que requiere asistencia legal inmediata, como una detención, un registro judicial o una comparecencia inminente. Para estos casos, disponemos de una línea de guardia 24/7.',
+      'Una urgencia es una situación que requiere asistencia legal inmediata, como una detención, un registro judicial o una comparecencia inminente. El estudio jurídico 24 hs Mendoza dispone de guardia penal para estos casos; puede contactar a la abogada penalista o abogado penalista Mendoza por el canal de urgencias.',
   },
   {
     id: 'faq-empresas',
     category: 'empresas',
     question: '¿Ofrecen asesoramiento a empresas y directorios?',
     answer:
-      'Sí, diseñamos estrategias de prevención penal (Compliance) y asumimos la defensa corporativa de directivos y órganos de administración frente a responsabilidades societarias.',
+      'Sí. El estudio jurídico penal en Mendoza diseña estrategias de prevención penal (Compliance) y asume la defensa corporativa de directivos y órganos de administración frente a responsabilidades societarias.',
   },
   {
     id: 'faq-modalidad',
@@ -364,6 +364,6 @@ export const FAQS: FAQItem[] = [
     category: 'general',
     question: '¿En qué jurisdicción intervienen?',
     answer:
-      'Actuamos principalmente en Mendoza y tribunales federales, con capacidad de intervención y coordinación en todo el territorio nacional para casos de alta complejidad.',
+      'Actuamos como estudio jurídico penal Mendoza principalmente en la Provincia de Mendoza y tribunales federales de Cuyo, con capacidad de intervención y coordinación en todo el territorio nacional para casos de alta complejidad.',
   },
 ];
