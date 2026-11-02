@@ -64,29 +64,25 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
   }, [isMethodRoute]);
 
   const pageTitle = isMethodRoute
-    ? 'Nuestro método'
-    : 'Trayectoria y experiencia';
+    ? 'Método del estudio jurídico penal'
+    : 'Abogada penalista en Mendoza';
 
   const pageTitleHighlight = isMethodRoute
-    ? 'jurídica'
-    : 'profesional';
+    ? 'en Mendoza'
+    : 'y estudio jurídico penal';
 
   const pageSubtitle = isMethodRoute
-    ? 'Un proceso de trabajo estructurado para comprender cada situación, evaluar sus riesgos y construir una estrategia jurídica rigurosa.'
-    : `Más de ${LAWYER_INFO.experienceYears} años liderando litigación de alta complejidad, análisis pericial y defensa penal estratégica ante los máximos tribunales y audiencias provinciales.`;
+    ? 'Proceso de trabajo del estudio jurídico penal en Mendoza: comprender cada situación, evaluar riesgos y construir una estrategia rigurosa, con disponibilidad de estudio jurídico 24 hs Mendoza.'
+    : `Emilia Sandobar es abogada penalista en Mendoza y dirige un estudio jurídico penal con más de ${LAWYER_INFO.experienceYears} años de trayectoria en litigación, análisis pericial y defensa penal estratégica ante tribunales provinciales y federales.`;
 
   return (
     <div id="about-section" className="w-full bg-[#FAF6F0]">
 
-      {/* ========================================================
-          PAGE HERO
-      ======================================================== */}
       <section
         id="about-hero"
         aria-labelledby="about-hero-title"
         className="relative flex min-h-[480px] w-full items-center overflow-hidden bg-[#181614] pb-16 pt-28 lg:min-h-[540px] lg:pb-20 lg:pt-32"
       >
-        {/* Background */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -99,16 +95,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           aria-hidden="true"
         />
 
-        {/* Overlay */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-[#181614]/95 via-[#231F1C]/90 to-[#2A2522]/75"
           aria-hidden="true"
         />
 
-        {/* Hero content */}
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
-          {/* Breadcrumb */}
           <div className="mb-8 lg:mb-10">
             <Breadcrumb
               items={[
@@ -144,14 +137,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         </div>
       </section>
 
-      {/* ========================================================
-          CONTENT
-      ======================================================== */}
       <main className="mx-auto max-w-7xl space-y-16 px-4 py-16 sm:px-6 lg:space-y-24 lg:px-8 lg:py-24">
 
-        {/* ======================================================
-            MANIFIESTO
-        ====================================================== */}
         <section
           id="trayectoria-manifiesto"
           className="space-y-12"
@@ -159,18 +146,16 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         >
           <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-20">
 
-            {/* IMAGE */}
             <div className="w-full lg:col-span-5">
               <img
                 src={ASSETS.portrait}
-                alt="Retrato de la Abogada Emilia Sandobar"
+                alt="Retrato de Emilia Sandobar, abogada penalista y estudio jurídico penal en Mendoza"
                 className="h-auto w-full rounded-sm object-cover shadow-md"
                 loading="lazy"
                 decoding="async"
               />
             </div>
 
-            {/* TEXT */}
             <div className="space-y-8 lg:col-span-7">
 
               <h2
@@ -184,17 +169,17 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               <p className="max-w-prose text-lg font-light leading-relaxed text-[#302D28]/80 sm:text-xl lg:max-w-none">
                 El rigor técnico y la lealtad procesal son la
                 única garantía real de una defensa inquebrantable.
-                Entendemos que cada situación jurídica compromete
+                En el estudio jurídico penal de Mendoza entendemos que cada situación jurídica compromete
                 el prestigio, el patrimonio y, en ocasiones, la
                 libertad de nuestros clientes.
               </p>
 
               <p className="max-w-prose text-base font-light leading-relaxed text-[#302D28]/80 sm:text-lg lg:max-w-none">
-                Su ejercicio profesional se distingue por el
+                El ejercicio de abogada penalista y abogado penalista Mendoza se distingue por el
                 análisis pericial minucioso de la prueba, la
                 anticipación estratégica ante la acusación pública
                 y privada, y un trato directo, honesto y
-                transparente en situaciones de máxima exigencia.
+                transparente en situaciones de máxima exigencia, incluida la atención de estudio jurídico 24 hs Mendoza.
               </p>
 
               <div className="pt-8">
@@ -216,9 +201,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           </div>
         </section>
 
-        {/* ======================================================
-            EXPERIENCIA / AUTORIDAD
-        ====================================================== */}
         <section
           id="autoridad-respaldo"
           className="space-y-8 lg:space-y-12"
@@ -230,7 +212,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               id="authority-title"
               className="text-[10px] font-bold uppercase tracking-widest text-[#7F203D] sm:text-xs"
             >
-              Autoridad &amp; Respaldo
+              Autoridad & Respaldo
             </h2>
 
             <div className="relative">
@@ -271,7 +253,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                 ))}
               </div>
 
-              {/* MOBILE SCROLL HINT */}
               <div
                 className="flex items-center justify-center gap-2 pt-3 text-xs font-light text-[#302D28] md:hidden"
                 aria-hidden="true"
@@ -290,9 +271,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           </div>
         </section>
 
-        {/* ======================================================
-            MÉTODO
-        ====================================================== */}
         <section
           id="metodo-proceso"
           className="scroll-mt-28 space-y-12 lg:space-y-16"
@@ -304,7 +282,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               id="method-title"
               className="text-[10px] font-bold uppercase tracking-widest text-[#7F203D] sm:text-xs"
             >
-              Método &amp; Proceso
+              Método & Proceso
             </h2>
 
           </div>
@@ -318,7 +296,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               >
                 <div className="relative h-full w-full border-t border-[#302D28]/20 pr-8 pt-6 sm:pt-8 lg:pr-12">
 
-                  {/* PROCESS INDICATOR */}
                   <div
                     className="absolute -top-[4px] left-0 h-2 w-2 rounded-full bg-[#7F203D] shadow-[0_0_0_4px_#FFF8F2] transition-transform duration-500 group-hover:scale-150"
                     aria-hidden="true"
