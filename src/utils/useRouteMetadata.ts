@@ -15,53 +15,53 @@ interface RouteMetadata {
 /** Keep in sync with scripts/generate-route-html.mjs */
 const ROUTE_METADATA: Record<string, RouteMetadata> = {
   '/': {
-    title: 'Abogada Penalista en Mendoza | Defensa Penal 24 hs | Emilia Sandobar',
+    title: 'Abogada Penalista en Mendoza | Estudio Jurídico Penal 24 hs | Emilia Sandobar',
     description:
-      'Abogada penalista en Mendoza especializada en derecho penal. Defensa penal, representación de víctimas y guardia legal 24 hs. Consulta confidencial.',
+      'Abogada penalista y abogado penalista en Mendoza. Estudio jurídico penal con defensa, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Consulta confidencial.',
     image: `${SITE_URL}/assets/images/hero/hero-home.webp`,
-    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista en Mendoza',
+    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista y estudio jurídico penal en Mendoza',
   },
   '/inicio': {
-    title: 'Abogada Penalista en Mendoza | Defensa Penal 24 hs | Emilia Sandobar',
+    title: 'Abogada Penalista en Mendoza | Estudio Jurídico Penal 24 hs | Emilia Sandobar',
     description:
-      'Abogada penalista en Mendoza especializada en derecho penal. Defensa penal, representación de víctimas y guardia legal 24 hs. Consulta confidencial.',
+      'Abogada penalista y abogado penalista en Mendoza. Estudio jurídico penal con defensa, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Consulta confidencial.',
     image: `${SITE_URL}/assets/images/hero/hero-home.webp`,
-    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista en Mendoza',
+    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista y estudio jurídico penal en Mendoza',
   },
   '/servicios-abogacia-mendoza': {
-    title: 'Servicios de Abogacía en Mendoza | Defensa Penal y Urgencias 24 hs',
+    title: 'Servicios de Estudio Jurídico Penal en Mendoza | Defensa y Urgencias 24 hs',
     description:
-      'Abogada penal en Mendoza: defensa penal, urgencias 24 hs, litigación compleja y asesoramiento corporativo especializado.',
+      'Estudio jurídico penal Mendoza: defensa penal, abogado penalista Mendoza, urgencias 24 hs, litigación compleja y asesoramiento corporativo.',
     image: `${SITE_URL}/assets/images/hero/hero-services.webp`,
-    imageAlt: 'Servicios de abogacía penal en Mendoza — Emilia Sandobar',
+    imageAlt: 'Servicios del estudio jurídico penal en Mendoza — Emilia Sandobar',
   },
   '/abogada-penalista-mendoza': {
-    title: 'Abogada Penalista en Mendoza | Especializada en Derecho Penal | Emilia Sandobar',
+    title: 'Abogada Penalista en Mendoza | Estudio Jurídico Penal | Emilia Sandobar',
     description:
-      'Emilia Sandobar, abogada penalista en Mendoza especializada en derecho penal. Litigio provincial y federal, con guardia legal 24 hs.',
+      'Emilia Sandobar, abogada penalista en Mendoza. Estudio jurídico penal con litigio provincial y federal, y estudio jurídico 24 hs Mendoza para urgencias.',
     image: `${SITE_URL}/assets/images/hero/hero-about.webp`,
-    imageAlt: 'Perfil de Emilia Sandobar, abogada penalista en Mendoza',
+    imageAlt: 'Perfil de Emilia Sandobar, abogada penalista y estudio jurídico penal en Mendoza',
   },
   '/nuestro-metodo': {
-    title: 'Método de Trabajo | Abogada Penalista en Mendoza | Emilia Sandobar',
+    title: 'Método de Trabajo | Estudio Jurídico Penal en Mendoza | Emilia Sandobar',
     description:
-      'Método de trabajo de la abogada penalista Emilia Sandobar: análisis, estrategia y acompañamiento en causas penales en Mendoza.',
+      'Método del estudio jurídico penal de Emilia Sandobar en Mendoza: análisis, estrategia y acompañamiento en causas penales, con disponibilidad 24 hs.',
     image: `${SITE_URL}/assets/images/hero/hero-method.webp`,
-    imageAlt: 'Método de trabajo — abogada penalista Emilia Sandobar',
+    imageAlt: 'Método de trabajo — estudio jurídico penal Emilia Sandobar Mendoza',
   },
   '/preguntas-frecuentes': {
-    title: 'Preguntas Frecuentes | Abogada Penalista 24 hs en Mendoza',
+    title: 'Preguntas Frecuentes | Estudio Jurídico Penal 24 hs en Mendoza',
     description:
-      'FAQ abogada penalista en Mendoza: contactar guardia 24 hs, qué hacer si me detienen, y diferencia entre abogada penal y penalista.',
+      'FAQ del estudio jurídico penal Mendoza: contactar guardia 24 hs, abogado penalista Mendoza, qué hacer si me detienen y cómo solicitar consulta.',
     image: `${SITE_URL}/assets/images/hero/hero-faq.webp`,
-    imageAlt: 'Preguntas frecuentes — abogada penalista en Mendoza',
+    imageAlt: 'Preguntas frecuentes — estudio jurídico penal 24 hs Mendoza',
   },
   '/contacto': {
-    title: 'Contacto | Abogada Penalista en Mendoza | Guardia Legal 24 hs',
+    title: 'Contacto | Estudio Jurídico Penal 24 hs Mendoza | Emilia Sandobar',
     description:
-      'Contacte a Emilia Sandobar, abogada penalista en Mendoza. Consulta profesional y guardia legal 24 hs para urgencias penales.',
+      'Contacte el estudio jurídico penal de Emilia Sandobar en Mendoza. Consulta profesional y estudio jurídico 24 hs Mendoza para urgencias penales.',
     image: `${SITE_URL}/assets/images/hero/hero-contact.webp`,
-    imageAlt: 'Contacto y guardia legal 24 hs — Emilia Sandobar',
+    imageAlt: 'Contacto del estudio jurídico penal 24 hs en Mendoza — Emilia Sandobar',
   },
 };
 
@@ -98,11 +98,16 @@ export function useRouteMetadata() {
     document.title = metadata.title;
 
     upsertMeta('name', 'description', metadata.description);
+    upsertMeta(
+      'name',
+      'keywords',
+      'abogada penalista Mendoza, abogado penalista Mendoza, estudio jurídico penal Mendoza, estudio jurídico 24 hs Mendoza, defensa penal Mendoza, urgencias penales 24 hs',
+    );
     upsertMeta('name', 'robots', 'index, follow, max-image-preview:large');
 
     upsertMeta('property', 'og:type', 'website');
     upsertMeta('property', 'og:locale', 'es_AR');
-    upsertMeta('property', 'og:site_name', 'Emilia Sandobar');
+    upsertMeta('property', 'og:site_name', 'Emilia Sandobar — Estudio Jurídico Penal');
     upsertMeta('property', 'og:title', metadata.title);
     upsertMeta('property', 'og:description', metadata.description);
     upsertMeta('property', 'og:url', canonicalUrl);

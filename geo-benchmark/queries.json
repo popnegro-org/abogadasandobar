@@ -1,6 +1,6 @@
 {
   "version": "P5 GEO Benchmark v1",
-  "target": "Emilia Sandobar — abogada penalista en Mendoza",
+  "target": "Emilia Sandobar — abogada penalista y estudio jurídico penal en Mendoza",
   "candidates": [
     {"name":"Silvina Bustos","aliases":["Silvina Bustos","Estudio Jurídico Bustos"]},
     {"name":"Sosa Arditi","aliases":["Sosa Arditi","Estudio Sosa Arditi"]},
@@ -26,6 +26,9 @@
     {"id":"Q12","category":"entity","intent":"Emilia Sandobar penalista","query":"Emilia Sandobar penalista"},
     {"id":"Q13","category":"entity","intent":"quién es Emilia Sandobar","query":"quién es Emilia Sandobar"},
     {"id":"Q14","category":"recommendation","intent":"abogada penalista recomendada en Mendoza","query":"abogada penalista recomendada en Mendoza"},
-    {"id":"Q15","category":"recommendation","intent":"abogada penalista especializada en Mendoza","query":"abogada penalista especializada en Mendoza"}
+    {"id":"Q15","category":"recommendation","intent":"abogada penalista especializada en Mendoza","query":"abogada penalista especializada en Mendoza"},
+    {"id":"Q16","category":"penal-general","intent":"abogado penalista Mendoza","query":"abogado penalista Mendoza"},
+    {"id":"Q17","category":"estudio","intent":"estudio jurídico penal Mendoza","query":"estudio jurídico penal Mendoza"},
+    {"id":"Q18","category":"urgencia","intent":"estudio jurídico 24 hs Mendoza","query":"estudio jurídico 24 hs Mendoza"}
   ]
 }

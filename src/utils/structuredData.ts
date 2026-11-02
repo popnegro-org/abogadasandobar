@@ -13,6 +13,9 @@ export interface StructuredPage {
 const SERVICE_TYPES = [
   'Derecho Penal',
   'Abogada penalista',
+  'Abogado penalista Mendoza',
+  'Estudio jurídico penal Mendoza',
+  'Estudio jurídico 24 hs Mendoza',
   'Urgencias penales 24 hs',
   'Litigación penal',
   'Asesoramiento corporativo',
@@ -81,18 +84,24 @@ export function updateStructuredData(page: StructuredPage) {
         '@type': 'ProfilePage',
         '@id': `${SITE_URL}/abogada-penalista-mendoza#profilepage`,
         url: `${SITE_URL}/abogada-penalista-mendoza`,
-        name: 'Abogada Penalista en Mendoza | Especializada en Derecho Penal | Emilia Sandobar',
+        name: 'Abogada Penalista en Mendoza | Estudio Jurídico Penal | Emilia Sandobar',
         mainEntity: { '@id': PERSON_ID },
         isPartOf: { '@id': WEBSITE_ID },
       },
       {
         '@type': 'LegalService',
         '@id': SERVICE_ID,
-        name: 'Dra. Emilia Sandobar',
+        name: 'Estudio jurídico penal Emilia Sandobar',
+        alternateName: [
+          'Abogada Penalista Emilia Sandobar',
+          'Estudio jurídico penal Mendoza',
+          'Estudio jurídico 24 hs Mendoza',
+        ],
         url: SITE_URL + '/',
         image: `${SITE_URL}/assets/images/hero/hero-home.webp`,
         logo: `${SITE_URL}/assets/brand/logo-brandmark.svg`,
-        description: 'Abogada penalista en Mendoza especializada en derecho penal. Defensa penal, representación de víctimas y guardia legal 24 hs para particulares, empresas y directivos.',
+        description:
+          'Estudio jurídico penal en Mendoza dirigido por la Dra. Emilia Sandobar. Abogada penalista y abogado penalista Mendoza con defensa penal, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias.',
         areaServed: {
           '@type': 'City',
           name: 'Mendoza',
@@ -100,7 +109,7 @@ export function updateStructuredData(page: StructuredPage) {
         },
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Peatonal Sarmiento 250, 2do piso oficina B',
+          streetAddress: 'Peatonal Sarmiento 250, 2° B',
           addressLocality: 'Mendoza',
           addressCountry: 'AR',
         },
@@ -138,8 +147,9 @@ export function updateStructuredData(page: StructuredPage) {
     '@type': 'WebSite',
     '@id': WEBSITE_ID,
     url: SITE_URL + '/',
-    name: 'Dra. Emilia Sandobar',
-    description: 'Sitio web profesional de la Dra. Emilia Sandobar, abogada penalista en Mendoza especializada en derecho penal.',
+    name: 'Emilia Sandobar — Estudio Jurídico Penal Mendoza',
+    description:
+      'Sitio oficial del estudio jurídico penal de la Dra. Emilia Sandobar en Mendoza. Abogada penalista, abogado penalista Mendoza y atención 24 hs.',
     inLanguage: 'es-AR',
     publisher: { '@id': PERSON_ID },
   });

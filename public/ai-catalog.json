@@ -1,7 +1,7 @@
 {
   "specVersion": "1.0",
   "host": {
-    "displayName": "Dra. Emilia Sandobar — Abogada Penalista en Mendoza",
+    "displayName": "Dra. Emilia Sandobar — Estudio Jurídico Penal en Mendoza",
     "identifier": "abogadasandobar.com.ar",
     "documentationUrl": "https://abogadasandobar.com.ar/llms.txt",
     "logoUrl": "https://abogadasandobar.com.ar/assets/brand/logo-brandmark.svg"
@@ -9,16 +9,28 @@
   "entries": [
     {
       "identifier": "urn:air:abogadasandobar.com.ar:skill:legal-service",
-      "displayName": "Emilia Sandobar — Abogada Penalista en Mendoza",
+      "displayName": "Emilia Sandobar — Abogada Penalista y Estudio Jurídico Penal Mendoza",
       "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://abogadasandobar.com.ar/skills/emilia-sandobar.md",
-      "description": "Skill de descubrimiento: abogada penalista en Mendoza, defensa penal, guardia legal 24 hs y consulta profesional confidencial.",
-      "tags": ["abogada-penalista", "mendoza", "derecho-penal", "argentina", "legal", "urgencias"],
+      "description": "Skill de descubrimiento: abogada penalista y abogado penalista Mendoza, estudio jurídico penal Mendoza, estudio jurídico 24 hs Mendoza, defensa penal y consulta profesional confidencial.",
+      "tags": [
+        "abogada-penalista",
+        "abogado-penalista-mendoza",
+        "estudio-juridico-penal-mendoza",
+        "estudio-juridico-24-hs-mendoza",
+        "mendoza",
+        "derecho-penal",
+        "argentina",
+        "legal",
+        "urgencias"
+      ],
       "capabilities": ["LegalServiceInfo", "Contact", "UrgenciasPenales24hs"],
       "representativeQueries": [
         "abogada penalista en Mendoza",
+        "abogado penalista Mendoza",
+        "estudio jurídico penal Mendoza",
+        "estudio jurídico 24 hs Mendoza",
         "abogada penalista 24 hs Mendoza",
-        "abogada especializada en derecho penal Mendoza",
         "cómo contactar una abogada penal en Mendoza"
       ]
     },
@@ -27,12 +39,13 @@
       "displayName": "llms.txt — Resumen para agentes de IA",
       "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://abogadasandobar.com.ar/llms.txt",
-      "description": "Resumen en markdown del perfil profesional, especialidad, localidad y páginas principales del sitio.",
-      "tags": ["llms.txt", "documentation", "ai-discovery", "mendoza"],
+      "description": "Resumen en markdown del perfil profesional, estudio jurídico penal en Mendoza, especialidad, localidad y páginas principales del sitio.",
+      "tags": ["llms.txt", "documentation", "ai-discovery", "mendoza", "estudio-juridico-penal"],
       "capabilities": ["SiteSummary"],
       "representativeQueries": [
         "quién es Emilia Sandobar abogada",
-        "resumen del estudio jurídico Sandobar en Mendoza"
+        "resumen del estudio jurídico penal Sandobar en Mendoza",
+        "estudio jurídico 24 hs Mendoza"
       ]
     }
   ]
