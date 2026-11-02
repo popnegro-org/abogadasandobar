@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 2026-11-02 — Baseline de datos y assets
+
+### Datos y contenido
+- `contactData.ts` queda como fuente única de verdad para matrículas, teléfono, email y dirección.
+- `LAWYER_INFO` se sincroniza con `CONTACT_INFO` (Mat. Provincial N° 11576, teléfono y email reales).
+- Se suavizan las estadísticas de autoridad: se eliminan porcentajes y conteos de casos no verificables; se mantienen trayectoria, guardia 24 hs, cobertura y secreto profesional.
+
+### Assets
+- Se eliminan del manifiesto las 8 rutas `/assets/images/services/*.webp` que no existen en el repositorio.
+- `ASSETS` se centraliza en `src/data/assets.ts`; `lawyerData` reexporta para no romper imports existentes.
+- Los ítems del catálogo `SERVICES` usan `serviceFallback` (hero de servicios) hasta disponer de assets por práctica.
+
+### Mantenimiento
+- `package.json` versionado a `1.0.0`.
+- Se elimina `bun.lock` (el proyecto usa npm / `package-lock.json`).
+
 ## 2026-08-18 — Stabilización `fix/stabilize-main`
 
 ### QA / E2E
