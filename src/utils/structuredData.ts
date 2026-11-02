@@ -23,6 +23,78 @@ const SERVICE_TYPES = [
   'Reclamos indemnizatorios',
 ];
 
+/** Coordenadas del despacho (Peatonal Sarmiento 250, Mendoza) — alineadas al embed de Google Maps. */
+const OFFICE_GEO = {
+  '@type': 'GeoCoordinates',
+  latitude: -32.890209,
+  longitude: -68.842749,
+} as const;
+
+const OFFICE_MAP_URL =
+  'https://www.google.com/maps/place/Abogada+Emilia+Sandobar/@-32.890209,-68.842749,15z';
+
+const OFFER_CATALOG = {
+  '@type': 'OfferCatalog',
+  name: 'Servicios del estudio jurídico penal',
+  itemListElement: [
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Defensa penal y litigación',
+        description:
+          'Representación de personas imputadas y litigación en causas penales provinciales y federales.',
+        areaServed: 'Mendoza, Argentina',
+        provider: { '@id': SERVICE_ID },
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Estudio jurídico 24 hs Mendoza',
+        description:
+          'Guardia penal y urgencias 24 hs: detenciones, allanamientos, citaciones y medidas de coerción.',
+        areaServed: 'Mendoza, Argentina',
+        provider: { '@id': SERVICE_ID },
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Representación de víctimas y querellas',
+        description:
+          'Impulso de la investigación, producción de prueba y protección de derechos de las víctimas.',
+        areaServed: 'Mendoza, Argentina',
+        provider: { '@id': SERVICE_ID },
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Asesoramiento corporativo y compliance',
+        description:
+          'Asesoramiento preventivo, compliance e integridad para empresas y equipos directivos.',
+        areaServed: 'Mendoza, Argentina',
+        provider: { '@id': SERVICE_ID },
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Reclamos indemnizatorios',
+        description:
+          'Representación en reclamos por lesiones y daños derivados de accidentes de tránsito.',
+        areaServed: 'Mendoza, Argentina',
+        provider: { '@id': SERVICE_ID },
+      },
+    },
+  ],
+};
+
 const AUTHORITY_SOURCES = [
   {
     '@type': 'CreativeWork',
@@ -101,22 +173,64 @@ export function updateStructuredData(page: StructuredPage) {
         image: `${SITE_URL}/assets/images/hero/hero-home.webp`,
         logo: `${SITE_URL}/assets/brand/logo-brandmark.svg`,
         description:
-          'Estudio jurídico penal en Mendoza dirigido por la Dra. Emilia Sandobar. Abogada penalista y abogado penalista Mendoza con defensa penal, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias.',
-        areaServed: {
-          '@type': 'City',
-          name: 'Mendoza',
-          containedInPlace: { '@type': 'Country', name: 'Argentina' },
-        },
+          'Estudio jurídico penal en Mendoza dirigido por la Dra. Emilia Sandobar. Abogada penalista y abogado penalista Mendoza con defensa penal, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Atención de guardia penal 24 hs.',
+        areaServed: [
+          {
+            '@type': 'City',
+            name: 'Mendoza',
+            containedInPlace: {
+              '@type': 'AdministrativeArea',
+              name: 'Provincia de Mendoza',
+              containedInPlace: { '@type': 'Country', name: 'Argentina' },
+            },
+          },
+          {
+            '@type': 'AdministrativeArea',
+            name: 'Fueros Federales de Cuyo',
+          },
+        ],
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'Peatonal Sarmiento 250, 2° B',
           addressLocality: 'Mendoza',
+          addressRegion: 'Mendoza',
           addressCountry: 'AR',
         },
+        geo: OFFICE_GEO,
+        hasMap: OFFICE_MAP_URL,
+        openingHours: 'Mo-Fr 08:30-19:30',
         email: 'info@abogadasandobar.com.ar',
         telephone: '+54 9 261 346-4483',
+        contactPoint: [
+          {
+            '@type': 'ContactPoint',
+            contactType: 'customer service',
+            telephone: '+54 9 261 346-4483',
+            email: 'info@abogadasandobar.com.ar',
+            availableLanguage: ['Spanish'],
+            areaServed: 'AR',
+            hoursAvailable: {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+              opens: '08:30',
+              closes: '19:30',
+            },
+          },
+          {
+            '@type': 'ContactPoint',
+            contactType: 'emergency',
+            telephone: '+54 9 261 346-4483',
+            availableLanguage: ['Spanish'],
+            areaServed: 'AR',
+            description: 'Guardia penal / estudio jurídico 24 hs Mendoza',
+          },
+        ],
         provider: { '@id': PERSON_ID },
+        employee: { '@id': PERSON_ID },
         serviceType: SERVICE_TYPES,
+        hasOfferCatalog: OFFER_CATALOG,
+        keywords:
+          'abogada penalista Mendoza, abogado penalista Mendoza, estudio jurídico penal Mendoza, estudio jurídico 24 hs Mendoza, defensa penal, urgencias penales 24 hs',
       },
     ],
   });
