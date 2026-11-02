@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-11-02 — Schema LegalService completo (local + entidad)
+
+### Structured data
+- `geo` + `hasMap` del despacho (Peatonal Sarmiento 250, Mendoza).
+- `openingHours` `Mo-Fr 08:30-19:30` y `ContactPoint` (atención + emergencia 24 hs).
+- `areaServed` ampliada (Mendoza + Fueros Federales de Cuyo).
+- `hasOfferCatalog` con 5 servicios reales.
+- `sameAs` al perfil Google Business / Maps (`/g/11nvqh1877`) y share estable.
+- Capas alineadas: `structuredData.ts`, `index.html`, `generate-route-html.mjs`.
+- Fix: restauración de `escapeHtml` con entidades HTML en el prerender.
+
 ## 2026-11-02 — SEO/GEO keywords (estudio jurídico penal / 24 hs / abogado penalista)
 
 ### Keywords objetivo
