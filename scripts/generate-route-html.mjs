@@ -12,81 +12,86 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
  */
 const ROUTES = {
   '/': {
-    title: 'Abogada Penalista en Mendoza | Defensa Penal 24 hs | Emilia Sandobar',
+    title: 'Abogada Penalista en Mendoza | Estudio Jurídico Penal 24 hs | Emilia Sandobar',
     description:
-      'Abogada penalista en Mendoza especializada en derecho penal. Defensa penal, representación de víctimas y guardia legal 24 hs. Consulta confidencial.',
+      'Abogada penalista y abogado penalista en Mendoza. Estudio jurídico penal con defensa, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Consulta confidencial.',
     image: `${SITE_URL}/assets/images/hero/hero-home.webp`,
-    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista en Mendoza',
+    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista y estudio jurídico penal en Mendoza',
     h1: 'Abogada Emilia Sandobar',
-    h2: 'Defensa penal y representación de víctimas en Mendoza',
+    h2: 'Estudio jurídico penal y defensa de víctimas en Mendoza',
     intro:
-      'Emilia Sandobar es abogada penalista en Mendoza especializada en derecho penal. Ofrece defensa penal, representación de víctimas y atención 24 hs para urgencias, con estrategia jurídica rigurosa e intervención profesional directa.',
+      'Emilia Sandobar es abogada penalista en Mendoza y dirige un estudio jurídico penal con defensa técnica, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Atención de abogado penalista Mendoza con estrategia rigurosa e intervención profesional directa.',
   },
   '/inicio': {
-    title: 'Abogada Penalista en Mendoza | Defensa Penal 24 hs | Emilia Sandobar',
+    title: 'Abogada Penalista en Mendoza | Estudio Jurídico Penal 24 hs | Emilia Sandobar',
     description:
-      'Abogada penalista en Mendoza especializada en derecho penal. Defensa penal, representación de víctimas y guardia legal 24 hs. Consulta confidencial.',
+      'Abogada penalista y abogado penalista en Mendoza. Estudio jurídico penal con defensa, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Consulta confidencial.',
     image: `${SITE_URL}/assets/images/hero/hero-home.webp`,
-    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista en Mendoza',
+    imageAlt: 'Dra. Emilia Sandobar — Abogada Penalista y estudio jurídico penal en Mendoza',
     h1: 'Abogada Emilia Sandobar',
-    h2: 'Defensa penal y representación de víctimas en Mendoza',
+    h2: 'Estudio jurídico penal y defensa de víctimas en Mendoza',
     intro:
-      'Emilia Sandobar es abogada penalista en Mendoza especializada en derecho penal. Ofrece defensa penal, representación de víctimas y atención 24 hs para urgencias, con estrategia jurídica rigurosa e intervención profesional directa.',
+      'Emilia Sandobar es abogada penalista en Mendoza y dirige un estudio jurídico penal con defensa técnica, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. Atención de abogado penalista Mendoza con estrategia rigurosa e intervención profesional directa.',
   },
   '/servicios-abogacia-mendoza': {
-    title: 'Servicios de Abogacía en Mendoza | Defensa Penal y Urgencias 24 hs',
+    title: 'Servicios de Estudio Jurídico Penal en Mendoza | Defensa y Urgencias 24 hs',
     description:
-      'Abogada penal en Mendoza: defensa penal, urgencias 24 hs, litigación compleja y asesoramiento corporativo especializado.',
+      'Estudio jurídico penal Mendoza: defensa penal, abogado penalista Mendoza, urgencias 24 hs, litigación compleja y asesoramiento corporativo.',
     image: `${SITE_URL}/assets/images/hero/hero-services.webp`,
-    imageAlt: 'Servicios de abogacía penal en Mendoza — Emilia Sandobar',
-    h1: 'Servicios de Abogacía en Mendoza',
+    imageAlt: 'Servicios del estudio jurídico penal en Mendoza — Emilia Sandobar',
+    h1: 'Servicios del estudio jurídico penal en Mendoza',
     intro:
-      'Defensa penal, litigación compleja y asesoramiento corporativo para personas y organizaciones que necesitan una estrategia jurídica rigurosa y una intervención profesional directa. Urgencias penales 24 hs en Mendoza.',
+      'Defensa penal, litigación compleja y asesoramiento corporativo del estudio jurídico penal en Mendoza. Abogado penalista Mendoza y estudio jurídico 24 hs Mendoza para personas y organizaciones que necesitan intervención profesional directa.',
   },
   '/abogada-penalista-mendoza': {
-    title: 'Abogada Penalista en Mendoza | Especializada en Derecho Penal | Emilia Sandobar',
+    title: 'Abogada Penalista en Mendoza | Estudio Jurídico Penal | Emilia Sandobar',
     description:
-      'Emilia Sandobar, abogada penalista en Mendoza especializada en derecho penal. Litigio provincial y federal, con guardia legal 24 hs.',
+      'Emilia Sandobar, abogada penalista en Mendoza. Estudio jurídico penal con litigio provincial y federal, y estudio jurídico 24 hs Mendoza para urgencias.',
     image: `${SITE_URL}/assets/images/hero/hero-about.webp`,
-    imageAlt: 'Perfil de Emilia Sandobar, abogada penalista en Mendoza',
+    imageAlt: 'Perfil de Emilia Sandobar, abogada penalista y estudio jurídico penal en Mendoza',
     h1: 'Abogada Penalista en Mendoza',
     intro:
-      'Emilia Sandobar es abogada penalista en Mendoza especializada en derecho penal. Interviene como abogada penal en causas provinciales y federales, con defensa técnica, representación de víctimas y guardia legal 24 hs para urgencias.',
+      'Emilia Sandobar es abogada penalista en Mendoza y dirige un estudio jurídico penal con intervención provincial y federal, defensa técnica, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias. También atiende búsquedas de abogado penalista Mendoza.',
   },
   '/nuestro-metodo': {
-    title: 'Método de Trabajo | Abogada Penalista en Mendoza | Emilia Sandobar',
+    title: 'Método de Trabajo | Estudio Jurídico Penal en Mendoza | Emilia Sandobar',
     description:
-      'Método de trabajo de la abogada penalista Emilia Sandobar: análisis, estrategia y acompañamiento en causas penales en Mendoza.',
+      'Método del estudio jurídico penal de Emilia Sandobar en Mendoza: análisis, estrategia y acompañamiento en causas penales, con disponibilidad 24 hs.',
     image: `${SITE_URL}/assets/images/hero/hero-method.webp`,
-    imageAlt: 'Método de trabajo — abogada penalista Emilia Sandobar',
+    imageAlt: 'Método de trabajo — estudio jurídico penal Emilia Sandobar Mendoza',
     h1: 'Nuestro método jurídico',
     intro:
-      'Un proceso de trabajo estructurado para comprender cada situación, evaluar sus riesgos y construir una estrategia jurídica rigurosa en causas penales en Mendoza.',
+      'Un proceso de trabajo estructurado del estudio jurídico penal en Mendoza para comprender cada situación, evaluar riesgos y construir una estrategia jurídica rigurosa, con disponibilidad de estudio jurídico 24 hs Mendoza.',
   },
   '/preguntas-frecuentes': {
-    title: 'Preguntas Frecuentes | Abogada Penalista 24 hs en Mendoza',
+    title: 'Preguntas Frecuentes | Estudio Jurídico Penal 24 hs en Mendoza',
     description:
-      'FAQ abogada penalista en Mendoza: contactar guardia 24 hs, qué hacer si me detienen, y diferencia entre abogada penal y penalista.',
+      'FAQ del estudio jurídico penal Mendoza: contactar guardia 24 hs, abogado penalista Mendoza, qué hacer si me detienen y cómo solicitar consulta.',
     image: `${SITE_URL}/assets/images/hero/hero-faq.webp`,
-    imageAlt: 'Preguntas frecuentes — abogada penalista en Mendoza',
+    imageAlt: 'Preguntas frecuentes — estudio jurídico penal 24 hs Mendoza',
     h1: 'Preguntas frecuentes',
     intro:
-      'Respuestas sobre abogada penalista 24 hs en Mendoza, cómo contactar la guardia legal, qué hacer ante una detención y la diferencia entre abogada penal y abogada penalista.',
+      'Respuestas del estudio jurídico penal Mendoza sobre abogada penalista y abogado penalista Mendoza, cómo contactar el estudio jurídico 24 hs Mendoza y qué hacer ante una detención.',
   },
   '/contacto': {
-    title: 'Contacto | Abogada Penalista en Mendoza | Guardia Legal 24 hs',
+    title: 'Contacto | Estudio Jurídico Penal 24 hs Mendoza | Emilia Sandobar',
     description:
-      'Contacte a Emilia Sandobar, abogada penalista en Mendoza. Consulta profesional y guardia legal 24 hs para urgencias penales.',
+      'Contacte el estudio jurídico penal de Emilia Sandobar en Mendoza. Consulta profesional y estudio jurídico 24 hs Mendoza para urgencias penales.',
     image: `${SITE_URL}/assets/images/hero/hero-contact.webp`,
-    imageAlt: 'Contacto y guardia legal 24 hs — Emilia Sandobar',
+    imageAlt: 'Contacto del estudio jurídico penal 24 hs en Mendoza — Emilia Sandobar',
     h1: 'Contacto',
     intro:
-      'Contacto de Emilia Sandobar, abogada penalista en Mendoza. Solicite una consulta profesional o asistencia de guardia legal 24 hs para urgencias penales.',
+      'Contacto del estudio jurídico penal de Emilia Sandobar en Mendoza. Solicite consulta profesional o asistencia de estudio jurídico 24 hs Mendoza para urgencias. Atención de abogada penalista y abogado penalista Mendoza.',
   },
 };
 
 const SERVICE_TYPES = [
   'Derecho Penal',
+  'Abogada penalista',
+  'Abogado penalista Mendoza',
+  'Estudio jurídico penal Mendoza',
+  'Estudio jurídico 24 hs Mendoza',
+  'Urgencias penales 24 hs',
   'Litigación penal',
   'Asesoramiento corporativo',
   'Representación penal y seguros',
@@ -135,8 +140,9 @@ function buildJsonLd(path, metadata) {
         '@type': 'WebSite',
         '@id': WEBSITE_ID,
         url: `${SITE_URL}/`,
-        name: 'Dra. Emilia Sandobar',
-        description: 'Sitio web profesional de la Dra. Emilia Sandobar, abogada en Mendoza.',
+        name: 'Emilia Sandobar — Estudio Jurídico Penal Mendoza',
+        description:
+          'Sitio oficial del estudio jurídico penal de la Dra. Emilia Sandobar en Mendoza. Abogada penalista, abogado penalista Mendoza y atención 24 hs.',
         inLanguage: 'es-AR',
         publisher: { '@id': PERSON_ID },
       },
@@ -164,25 +170,23 @@ function buildJsonLd(path, metadata) {
         url: `${SITE_URL}/abogada-penalista-mendoza`,
         image: `${SITE_URL}/assets/images/portraits/emilia-sandobar.webp`,
         worksFor: { '@id': SERVICE_ID },
-        knowsAbout: [
-          'Derecho Penal',
-          'Abogada penalista',
-          'Litigación penal',
-          'Urgencias penales 24 hs',
-          'Asesoramiento corporativo',
-          'Reclamos indemnizatorios',
-        ],
+        knowsAbout: SERVICE_TYPES,
         subjectOf: AUTHORITY_SOURCES,
       },
       {
         '@type': 'LegalService',
         '@id': SERVICE_ID,
-        name: 'Dra. Emilia Sandobar',
+        name: 'Estudio jurídico penal Emilia Sandobar',
+        alternateName: [
+          'Abogada Penalista Emilia Sandobar',
+          'Estudio jurídico penal Mendoza',
+          'Estudio jurídico 24 hs Mendoza',
+        ],
         url: `${SITE_URL}/`,
         image: DEFAULT_IMAGE,
         logo: `${SITE_URL}/assets/brand/logo-brandmark.svg`,
         description:
-          'Abogada penalista en Mendoza especializada en derecho penal. Defensa penal, representación de víctimas y guardia legal 24 hs para particulares, empresas y directivos, con atención profesional y confidencial.',
+          'Estudio jurídico penal en Mendoza dirigido por la Dra. Emilia Sandobar. Abogada penalista y abogado penalista Mendoza con defensa penal, representación de víctimas y estudio jurídico 24 hs Mendoza para urgencias.',
         areaServed: {
           '@type': 'City',
           name: 'Mendoza',
@@ -190,7 +194,7 @@ function buildJsonLd(path, metadata) {
         },
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Peatonal Sarmiento 250, 2do piso oficina B',
+          streetAddress: 'Peatonal Sarmiento 250, 2° B',
           addressLocality: 'Mendoza',
           addressCountry: 'AR',
         },
@@ -223,9 +227,9 @@ function buildSeoStaticMain(metadata) {
     `<ul>` +
     `<li><a href="${SITE_URL}/">Inicio</a></li>` +
     `<li><a href="${SITE_URL}/abogada-penalista-mendoza">Abogada penalista en Mendoza</a></li>` +
-    `<li><a href="${SITE_URL}/servicios-abogacia-mendoza">Servicios de abogacía</a></li>` +
+    `<li><a href="${SITE_URL}/servicios-abogacia-mendoza">Estudio jurídico penal en Mendoza</a></li>` +
     `<li><a href="${SITE_URL}/preguntas-frecuentes">Preguntas frecuentes</a></li>` +
-    `<li><a href="${SITE_URL}/contacto">Contacto y guardia 24 hs</a></li>` +
+    `<li><a href="${SITE_URL}/contacto">Contacto y estudio jurídico 24 hs</a></li>` +
     `</ul>` +
     `</nav>` +
     `</main>`
