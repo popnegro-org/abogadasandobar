@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 2026-11-02 — SEO/GEO keywords (estudio jurídico penal / 24 hs / abogado penalista)
+
+### Keywords objetivo
+- Abogado penalista Mendoza
+- estudio jurídico penal Mendoza
+- estudio jurídico 24 hs Mendoza
+
+### Capas actualizadas
+- Metadata por ruta (`useRouteMetadata`) + `index.html` (title, description, keywords, OG/Twitter).
+- JSON-LD / schema (`structuredData`, `index.html`, `generate-route-html`): `LegalService` con `alternateName` y `serviceType` ampliados.
+- On-page: Home, Servicios y Footer.
+- Prerender SEO: `scripts/generate-route-html.mjs` alineado con titles/intros.
+- GEO discovery: `llms.txt`, `ai-catalog.json`, skill markdown y 3 queries nuevas en `geo-benchmark/queries.json` (Q16–Q18).
+
 ## 2026-11-02 — Baseline de datos y assets
 
 ### Datos y contenido
@@ -11,6 +25,7 @@
 - Se eliminan del manifiesto las 8 rutas `/assets/images/services/*.webp` que no existen en el repositorio.
 - `ASSETS` se centraliza en `src/data/assets.ts`; `lawyerData` reexporta para no romper imports existentes.
 - Los ítems del catálogo `SERVICES` usan `serviceFallback` (hero de servicios) hasta disponer de assets por práctica.
+- Posteriormente se añadieron ilustraciones SVG reales por servicio en `public/assets/images/services/`.
 
 ### Mantenimiento
 - `package.json` versionado a `1.0.0`.
