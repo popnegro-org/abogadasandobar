@@ -5,6 +5,7 @@ import { ActiveTab, ContactFormData } from '../types';
 import { PageHero } from './PageHero';
 import { ASSETS } from '../data/lawyerData';
 import { submitFormspree } from '../lib/formspree';
+import { trackEvent } from '../lib/analytics';
 
 interface ContactSectionProps {
   setActiveTab?: (tab: ActiveTab) => void;
@@ -324,6 +325,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
       return;
     }
+
+    // Count a lead only after Formspree confirms successful receipt.
+    trackEvent('contact_form_success', {
+      form_name: 'contact_consultation',
+      submission_method: 'formspree',
+    });
 
     setFormData((prev) => ({
       ...prev,
