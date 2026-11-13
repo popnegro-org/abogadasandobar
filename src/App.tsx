@@ -48,20 +48,12 @@ function PageShell() {
       }
     };
 
-    const handleSubmit = (event: Event) => {
-      if (location.pathname !== TAB_TO_PATH.contacto) return;
-      const form = event.target as HTMLFormElement | null;
-      if (form?.tagName === 'FORM') trackEvent('contact_form_submit');
-    };
-
     document.addEventListener('click', handleClick);
     document.addEventListener('focusin', handleFocusIn);
-    document.addEventListener('submit', handleSubmit);
 
     return () => {
       document.removeEventListener('click', handleClick);
       document.removeEventListener('focusin', handleFocusIn);
-      document.removeEventListener('submit', handleSubmit);
     };
   }, [location.pathname]);
 
