@@ -15,8 +15,10 @@ test('does not load the production GA4 tag on localhost or Preview hosts', async
   });
 
   await page.goto('/');
+  // The tag loader uses requestIdleCallback (4s timeout) or a 2.5s fallback.
+  await page.waitForTimeout(4500);
 
-  await expect.poll(() => analyticsRequests.length).toBe(0);
+  expect(analyticsRequests).toHaveLength(0);
 
   const analyticsGlobals = await page.evaluate(() => ({
     gtag: typeof (window as Window & { gtag?: unknown }).gtag,
