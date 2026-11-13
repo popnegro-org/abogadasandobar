@@ -21,7 +21,7 @@ No form fields, names, phone numbers, email addresses, or message contents may b
 
 ## Known property-level issue requiring GA4 Admin access
 
-The current GA4 export contains 21 `generate_lead` key events during 2026-10-21–2026-11-13. All observed instances are attributed to `/contacto`; the event appears on page visits where there is no matching successful-submit signal. The application source does not emit `generate_lead`.
+The current GA4 export contains 23 `generate_lead` key events during 2026-10-21–2026-11-13. All observed instances are attributed to `/contacto`; the event appears on page visits where there is no matching successful-submit signal. The application source does not emit `generate_lead`.
 
 This strongly indicates a GA4-created event rule (or another property-side rule) that derives `generate_lead` from page activity. It must be inspected in GA4 Admin; the Windsor reporting connection is read-only and cannot change property configuration.
 
